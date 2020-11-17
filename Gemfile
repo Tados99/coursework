@@ -62,7 +62,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 
 # Adding Bootstrap to the application
-gem 'rails-bootstrap'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # Adding modernizr to the application
 gem 'modernizr-rails'
