@@ -37,6 +37,8 @@ class HomeController < ApplicationController
     email = params[:email]
     message = params[:message]
 
+# I decided to do a complete validation of the form, since it is important for an e-mail to have all the details I am asking for here
+
     if email.blank?
       flash[:alert] = I18n.t('home.request_contact.no_email')
     elsif name.blank?
