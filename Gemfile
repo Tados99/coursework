@@ -66,3 +66,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 # Adding modernizr to the application
 gem 'modernizr-rails'
+
+# Adding controller testin to the Application
+gem 'rails-controller-testing'
