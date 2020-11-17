@@ -10,7 +10,14 @@
   </head>
 
   <body>
+
     <%= render "shared/header" %>
+
+    <% flash.each do |key, message| %>
+        <script>
+          alert('<%= message %>');
+        </script>
+    <% end %>
 
     <%= yield %>
 

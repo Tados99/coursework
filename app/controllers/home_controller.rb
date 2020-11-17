@@ -1,9 +1,6 @@
 class HomeController < ApplicationController
   def home
   end
-  
-  def contact
-  end
 
   def fixture_setup
   end
@@ -30,5 +27,25 @@ class HomeController < ApplicationController
   end
 
   def teams
+  end
+
+  def contact
+  end
+
+  def request_contact
+    name = params[:name]
+    email = params[:email]
+    message = params[:message]
+
+    if email.blank?
+      flash[:alert] = I18n.t('home.request_contact.no_email')
+    elsif name.blank?
+      flash[:alert] = I18n.t('home.request_contact.no_name')
+    elsif message.blank?
+      flash[:alert] = I18n.t('home.request_contact.no_message')
+    else
+      flash[:notice] = I18n.t('home.request_contact.email_sent')
+    end
+    redirect_to root_path
   end
 end
