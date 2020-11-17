@@ -1,33 +1,17 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  home:
+    home:
+      welcome: Hungarian Ultimate League I
+      information: The Hungarian Ultimate League I is the professional adult Ultimate Frisbee League in Hungary. The League was established in 2017. It is currently sponsored by the 'Well Travel Agency' hence it is also known as Well Travel League. It is set to begin its 4th season in 2021 with more teams than ever before. This website is created to showcase a possible fixture and standings scenario for the League, but it can be used to track and organize data for any similar league. As a player of the aforementioned League I decided it is a good base idea to build my coursework on. There is no authetication or admin tracking process, so in its current state anyone can add new fixtures and modify the data. I figured this is not a problem for the coursework, but if I were to develop this site for actual users I would pay closer attention to who can changes things.
+  layouts:
+    application:
+      title: Hungarian Ultimate League I
+  shared:
+    header:
+      home: Home
+      standings: Standings
+      fixtures: Fixtures
+      teams: Teams
+      contact: Contact
+    footer:
+      creator: This website was created by Abel Csanaki as a Student of the University of Surrey in 2020 as a Coursework project for Web Applications and Development - COM2025

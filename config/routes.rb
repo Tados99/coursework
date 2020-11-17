@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#home'
   get 'home/player_setup'
   get 'home/team_setup'
   get 'home/fixture_setup'
@@ -9,6 +10,5 @@ Rails.application.routes.draw do
   get 'home/standings'
   get 'home/teams'
   get 'home/contact'
-  root 'home#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
