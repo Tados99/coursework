@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :players
+  resources :teams
+  resources :fixtures
   root 'home#home'
   get 'home/player_setup'
   get 'home/team_setup'

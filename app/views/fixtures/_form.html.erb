@@ -1,0 +1,37 @@
+<%= form_with(model: fixture, local: true) do |form| %>
+  <% if fixture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fixture.errors.count, "error") %> prohibited this fixture from being saved:</h2>
+
+      <ul>
+      <% fixture.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :home %>
+    <%= form.text_field :home %>
+  </div>
+
+  <div class="field">
+    <%= form.label :away %>
+    <%= form.text_field :away %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score_home %>
+    <%= form.number_field :score_home %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score_away %>
+    <%= form.number_field :score_away %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
