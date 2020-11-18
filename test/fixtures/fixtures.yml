@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  home: MyString
-  away: MyString
-  score_home: 1
-  score_away: 1
+  home: Up&Fly
+  away: Heroes
+  score_home: 15
+  score_away: 5
 
 two:
-  home: MyString
-  away: MyString
-  score_home: 1
-  score_away: 1
+  home: Heroes
+  away: Up&Fly
+  score_home: 5
+  score_away: 15

@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  city: MyString
-  est_year: 2020-11-18
-  championships_won: 1
+  name: Up&Fly
+  city: Gyor
+  est_year: 2015-01-01
+  championships_won: 0
 
 two:
-  name: MyString
-  city: MyString
-  est_year: 2020-11-18
-  championships_won: 1
+  name: Heroes
+  city: Budapest
+  est_year: 2015-01-01
+  championships_won: 0
