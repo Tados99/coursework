@@ -1,0 +1,23 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$font: Tahoma, Geneva, sans-serif;
+$main_red: #E31C25;
+$grey: #c6c6c6;
+$dark_grey: #222222;
+
+#navbar {
+  padding: 0px;
+  background-color: $main_red;
+  font-weight: bold;
+  color: $dark_grey;
+  text-align: center;
+}
+
+#navcolumn:hover {
+  background-color: $grey;
+}
+
+#navcolumn {
+  color: white;
+}

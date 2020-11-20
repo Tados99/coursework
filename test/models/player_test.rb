@@ -1,22 +1,24 @@
 require 'test_helper'
 
 class PlayerTest < ActiveSupport::TestCase
-  test "should not save empty player" do
+
+  setup do
+    @team = teams(:one)
+  end
+
+  test 'should not save empty player' do
     player = Player.new
 
     player.save
     refute player.valid?
   end
+
   test "should save valid player" do
     player = Player.new
 
-    player.surname = "Random"
-    player.forename = "James"
-    player.team = "Hello Sport"
-    player.dob = "1999-03-04"
-    player.games_played = 3
-    player.scores = 2
-    player.assists = 4
+    player.team = @team
+    player.surname = "test"
+    player.forename = "test"
 
     player.save
     assert player.valid?

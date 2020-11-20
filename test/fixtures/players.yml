@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  team: Up&Fly
-  surname: Csanaki
-  forename: Abel
-  dob: 1999-05-02
-  games_played: 5
-  scores: 14
-  assists: 12
+  team: one
+  surname: MyString
+  forename: MyString
+  dob: 2020-11-20
+  games_played: 1
+  scores: 1
+  assists: 1
 
 two:
-  team: Up&Fly
-  surname: Random
-  forename: James
-  dob: 1998-03-06
-  games_played: 5
-  scores: 6
-  assists: 3
+  team: two
+  surname: MyString
+  forename: MyString
+  dob: 2020-11-20
+  games_played: 1
+  scores: 1
+  assists: 1

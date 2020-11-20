@@ -1,5 +1,6 @@
 class PlayersController < ApplicationController
   before_action :set_player, only: [:show, :edit, :update, :destroy]
+  before_action :set_team, only: [:new, :create]
 
   # GET /players
   # GET /players.json
@@ -69,6 +70,10 @@ class PlayersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def player_params
-      params.require(:player).permit(:team, :surname, :forename, :dob, :games_played, :scores, :assists)
+      params.require(:player).permit(:team_id, :surname, :forename, :dob, :games_played, :scores, :assists)
+    end
+
+    def set_team
+      @team = Team.find_by(id: params[:team_id])
     end
 end

@@ -16,11 +16,11 @@ class PlayersTest < ApplicationSystemTestCase
 
     fill_in "Assists", with: @player.assists
     fill_in "Dob", with: @player.dob
-    fill_in "Forname", with: @player.forname
+    fill_in "Forename", with: @player.forename
     fill_in "Games played", with: @player.games_played
     fill_in "Scores", with: @player.scores
     fill_in "Surname", with: @player.surname
-    fill_in "Team", with: @player.team
+    fill_in "Team", with: @player.team_id
     click_on "Create Player"
 
     assert_text "Player was successfully created"
@@ -33,11 +33,11 @@ class PlayersTest < ApplicationSystemTestCase
 
     fill_in "Assists", with: @player.assists
     fill_in "Dob", with: @player.dob
-    fill_in "Forname", with: @player.forname
+    fill_in "Forename", with: @player.forename
     fill_in "Games played", with: @player.games_played
     fill_in "Scores", with: @player.scores
     fill_in "Surname", with: @player.surname
-    fill_in "Team", with: @player.team
+    fill_in "Team", with: @player.team_id
     click_on "Update Player"
 
     assert_text "Player was successfully updated"

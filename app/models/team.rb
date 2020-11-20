@@ -7,4 +7,5 @@ class Team < ApplicationRecord
 
   validates :est_year, presence: true
 
+  has_many :players, dependent: :nullify;
 end
