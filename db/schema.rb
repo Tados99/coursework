@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_20_162352) do
+ActiveRecord::Schema.define(version: 2020_11_22_184503) do
 
   create_table "fixtures", force: :cascade do |t|
-    t.string "home", null: false
-    t.string "away", null: false
-    t.integer "score_home"
-    t.integer "score_away"
+    t.integer "home_team_id"
+    t.integer "away_team_id"
+    t.integer "home_score"
+    t.integer "away_score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "players", force: :cascade do |t|
     t.integer "team_id"
-    t.string "surname",  null: false
-    t.string "forename", null: false
+    t.string "surname"
+    t.string "forename"
     t.date "dob"
     t.integer "games_played"
     t.integer "scores"

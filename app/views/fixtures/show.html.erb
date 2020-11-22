@@ -1,23 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Home:</strong>
-  <%= @fixture.home %>
+  <strong>Home team:</strong>
+  <%= @fixture.home_team_id %>
 </p>
 
 <p>
-  <strong>Away:</strong>
-  <%= @fixture.away %>
+  <strong>Away team:</strong>
+  <%= @fixture.away_team_id %>
 </p>
 
 <p>
-  <strong>Score home:</strong>
-  <%= @fixture.score_home %>
+  <strong>Home score:</strong>
+  <%= @fixture.home_score %>
 </p>
 
 <p>
-  <strong>Score away:</strong>
-  <%= @fixture.score_away %>
+  <strong>Away score:</strong>
+  <%= @fixture.away_score %>
 </p>
 
 <%= link_to 'Edit', edit_fixture_path(@fixture) %> |

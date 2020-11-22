@@ -1,6 +1,5 @@
 class FixturesController < ApplicationController
   before_action :set_fixture, only: [:show, :edit, :update, :destroy]
-
   # GET /fixtures
   # GET /fixtures.json
   def index
@@ -69,6 +68,6 @@ class FixturesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def fixture_params
-      params.require(:fixture).permit(:home, :away, :score_home, :score_away)
+      params.require(:fixture).permit(:home_team_id, :away_team_id, :home_score, :away_score)
     end
 end

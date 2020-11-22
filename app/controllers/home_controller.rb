@@ -1,10 +1,7 @@
 class HomeController < ApplicationController
   def home
   end
-
-  def standings
-  end
-
+  
   def contact
   end
 

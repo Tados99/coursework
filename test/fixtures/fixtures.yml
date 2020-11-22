@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  home: Up&Fly
-  away: Heroes
-  score_home: 15
-  score_away: 5
+  home_team_id: 2
+  away_team_id: 4
+  home_score: 12
+  away_score: 14
 
 two:
-  home: Heroes
-  away: Up&Fly
-  score_home: 5
-  score_away: 15
+  home_team_id: 4
+  away_team_id: 2
+  home_score: 11
+  away_score: 10

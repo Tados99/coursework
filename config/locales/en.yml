@@ -24,7 +24,7 @@ en:
   shared:
     header:
       home: Home
-      standings: Standings
+      players: Players
       fixtures: Fixtures
       teams: Teams
       contact: Contact

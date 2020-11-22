@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :fixtures
   root 'home#home'
   post 'request_contact', to: 'home#request_contact'
-  get 'home/standings'
+  get 'players/index'
   get 'home/contact'
   get 'fixtures/show'
   get 'team/show'

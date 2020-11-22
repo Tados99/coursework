@@ -14,10 +14,10 @@ class FixturesTest < ApplicationSystemTestCase
     visit fixtures_url
     click_on "New Fixture"
 
-    fill_in "Away", with: @fixture.away
-    fill_in "Home", with: @fixture.home
-    fill_in "Score away", with: @fixture.score_away
-    fill_in "Score home", with: @fixture.score_home
+    fill_in "Away score", with: @fixture.away_score
+    fill_in "Away team", with: @fixture.away_team_id
+    fill_in "Home score", with: @fixture.home_score
+    fill_in "Home team", with: @fixture.home_team_id
     click_on "Create Fixture"
 
     assert_text "Fixture was successfully created"
@@ -28,10 +28,10 @@ class FixturesTest < ApplicationSystemTestCase
     visit fixtures_url
     click_on "Edit", match: :first
 
-    fill_in "Away", with: @fixture.away
-    fill_in "Home", with: @fixture.home
-    fill_in "Score away", with: @fixture.score_away
-    fill_in "Score home", with: @fixture.score_home
+    fill_in "Away score", with: @fixture.away_score
+    fill_in "Away team", with: @fixture.away_team_id
+    fill_in "Home score", with: @fixture.home_score
+    fill_in "Home team", with: @fixture.home_team_id
     click_on "Update Fixture"
 
     assert_text "Fixture was successfully updated"

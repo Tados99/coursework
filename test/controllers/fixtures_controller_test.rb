@@ -3,6 +3,7 @@ require 'test_helper'
 class FixturesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @fixture = fixtures(:one)
+    @team = teams(:one)
   end
 
   test "should get index" do
@@ -17,7 +18,7 @@ class FixturesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create fixture" do
     assert_difference('Fixture.count') do
-      post fixtures_url, params: { fixture: { away: @fixture.away, home: @fixture.home, score_away: @fixture.score_away, score_home: @fixture.score_home } }
+      post fixtures_url, params: { fixture: { home_team_id: @team.id, away_team_id: @team.id, home_score: @fixture.home_score, away_score: @fixture.away_score} }
     end
 
     assert_redirected_to fixture_url(Fixture.last)
@@ -34,7 +35,7 @@ class FixturesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update fixture" do
-    patch fixture_url(@fixture), params: { fixture: { away: @fixture.away, home: @fixture.home, score_away: @fixture.score_away, score_home: @fixture.score_home } }
+    patch fixture_url(@fixture), params: { fixture: { home_team_id: @team.id, away_team_id: @team.id, home_score: @fixture.home_score, away_score: @fixture.away_score} }
     assert_redirected_to fixture_url(@fixture)
   end
 

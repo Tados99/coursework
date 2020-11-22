@@ -74,6 +74,6 @@ class PlayersController < ApplicationController
     end
 
     def set_team
-      @team = Team.find_by(id: params[:team_id])
+      @team = Team.find_by(id: params[:team_id]) 
     end
 end
