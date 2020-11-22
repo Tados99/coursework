@@ -1,24 +1,27 @@
 <p id="notice"><%= notice %></p>
 
+<div class="information">
+  
 <p><button><%= link_to t('.edit'), edit_team_path(@team) %></button> |
-<button><%= link_to t('.back'), teams_path %></button> | <button><%=link_to'Add Player', new_player_path(team_id: @team)%></button>
+<button><%= link_to t('.back'), teams_path %></button> | <button><%=link_to t('.add'), new_player_path(team_id: @team)%></button>
 </p>
-<p>
-  <strong>Name:</strong>
-  <%= @team.name %>
-</p>
+  <p>
+    <strong><%=t('.name')%></strong>
+    <%= @team.name %>
+  </p>
 
-<p>
-  <strong>City:</strong>
-  <%= @team.city %>
-</p>
+  <p>
+    <strong><%=t('.city')%></strong>
+    <%= @team.city %>
+  </p>
 
-<p>
-  <strong>Est year:</strong>
-  <%= @team.est_year %>
-</p>
+  <p>
+    <strong><%=t('.estYear')%></strong>
+    <%= @team.est_year %>
+  </p>
 
-<p>
-  <strong>Championships won:</strong>
-  <%= @team.championships_won %>
-</p>
+  <p>
+    <strong><%=t('.champships')%></strong>
+    <%= @team.championships_won %>
+  </p>
+</div>

@@ -30,8 +30,23 @@ en:
       contact: Contact
     footer:
       creator: This website was created by Abel Csanaki as a Student of the University of Surrey in 2020 as a Coursework project for Web Applications and Development - COM2025
-players:
-  show:
-    players: Players
-    edit: Edit
-    back: back
+  players:
+    show:
+      players: Players
+      edit: Edit
+      back: Back
+  teams:
+    index:
+      newTeam: Add a new team
+      clickOn: Click on any of the teams for further options and information about them.
+      name: Name
+      city: City
+      estYear: Establishment Year
+      champships: Championships Won
+      delete: Delete
+    show:
+      add: Add Player
+      name: "Name:"
+      city: "City:"
+      estYear: "Establishment Year:"
+      champships: "Championships Won:"
