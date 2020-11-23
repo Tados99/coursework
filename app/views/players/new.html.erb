@@ -1,5 +1,5 @@
-<h1>New Player</h1>
+<h1><%= t('.newPlayer') %></h1>
 
 <%= render 'form', player: @player %>
 
-<%= link_to 'Back', players_path %>
+<button><%= link_to t('.back'), players_path %></button>

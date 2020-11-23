@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Teams</h1>
+<h1><%= t('.teamList') %></h1>
 
 <p>
 <button><%= link_to t('.newTeam'), new_team_path(team_id: @team) %></button>
@@ -26,7 +26,7 @@
         <td><%= team.city %></td>
         <td><%= team.est_year %></td>
         <td><%= team.championships_won %></td>
-        <td><%= link_to t('.delete'), team, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
+        <td><%= link_to t('.delete'), team, method: :delete, data: { confirm: t('.sure') } %> </td>
       </tr>
     <% end %>
   </tbody>

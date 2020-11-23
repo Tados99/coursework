@@ -1,6 +1,8 @@
-<h1>Editing Fixture</h1>
+<h1><%= t('.editing')%></h1>
 
 <%= render 'form', fixture: @fixture %>
 
-<%= link_to 'Show', @fixture %> |
-<%= link_to 'Back', fixtures_path %>
+<p>
+  <button><%= link_to t('.show'), @fixture %></button> |
+  <button><%= link_to t('.back'), fixtures_path %></button>
+</p>

@@ -1,39 +1,45 @@
-<p id="notice"><%= notice %></p>
+<div class="information">
+  
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Team:</strong>
-  <%= @player.team.name %>
-</p>
+  <p>
+    <button><%= link_to t('.edit'), edit_player_path(@player) %></button> |
+    <button><%= link_to t('.back'), players_path %></button>
+  </p>
 
-<p>
-  <strong>Surname:</strong>
-  <%= @player.surname %>
-</p>
+  <p>
+    <strong><%= t('.team') %></strong>
+    <%= @player.team.name %>
+  </p>
 
-<p>
-  <strong>Forename:</strong>
-  <%= @player.forename %>
-</p>
+  <p>
+    <strong><%= t('.surname') %></strong>
+    <%= @player.surname %>
+  </p>
 
-<p>
-  <strong>Dob:</strong>
-  <%= @player.dob %>
-</p>
+  <p>
+    <strong><%= t('.forename') %></strong>
+    <%= @player.forename %>
+  </p>
 
-<p>
-  <strong>Games played:</strong>
-  <%= @player.games_played %>
-</p>
+  <p>
+    <strong><%= t('.dob') %></strong>
+    <%= @player.dob %>
+  </p>
 
-<p>
-  <strong>Scores:</strong>
-  <%= @player.scores %>
-</p>
+  <p>
+    <strong><%= t('.played') %></strong>
+    <%= @player.games_played %>
+  </p>
 
-<p>
-  <strong>Assists:</strong>
-  <%= @player.assists %>
-</p>
+  <p>
+    <strong><%= t('.scores') %></strong>
+    <%= @player.scores %>
+  </p>
 
-<%= link_to 'Edit', edit_player_path(@player) %> |
-<%= link_to 'Back', players_path %>
+  <p>
+    <strong><%= t('.assits') %></strong>
+    <%= @player.assists %>
+  </p>
+
+</div>

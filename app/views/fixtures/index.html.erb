@@ -1,33 +1,52 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Fixtures</h1>
+<h1><%= t('.fixtures')%></h1>
+
+<br>
+
+<p><button><%= link_to t('.new'), new_fixture_path %></button></p>
+
+<br>
 
 <table>
   <thead>
     <tr>
-      <th>Home team</th>
-      <th>Away team</th>
-      <th>Home score</th>
-      <th>Away score</th>
+      <th><%= t('.home')%></th>
+      <th><%= t('.away')%></th>
+      <th><%= t('.hscore')%></th>
+      <th><%= t('.ascore')%></th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
+
+<!-- This bit of the code is responsible for finding the team name for both home and away teams.
+    The each method must be called twice otherwise it might mix up the order of home and away teams based on which of them has a smaller number as their id
+    (hence away team might be found earlier and put under the wrong table heading as a home team) -->
+
     <% @fixtures.each do |fixture| %>
       <tr>
-        <td><%= fixture.home_team_id %></td>
-        <td><%= fixture.away_team_id %></td>
+        <% @teams = Team.all %>
+        <% @teams.each do |team| %>
+          <% if fixture.home_team_id == team.id %>
+            <td><%= team.name %></td>
+          <% end %>
+        <% end %>
+        <% @teams.each do |team| %>
+          <% if fixture.away_team_id == team.id %>
+            <td><%= team.name %></td>
+          <% end %>
+        <% end %>
+
+<!-- The above bit of the code is responsible for finding the team name for both home and away teams -->
+
         <td><%= fixture.home_score %></td>
         <td><%= fixture.away_score %></td>
-        <td><%= link_to 'Show', fixture %></td>
-        <td><%= link_to 'Edit', edit_fixture_path(fixture) %></td>
-        <td><%= link_to 'Destroy', fixture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button><%= link_to t('.info'), fixture %></button></td>
+        <td><button><%= link_to t('.edit'), edit_fixture_path(fixture) %></button></td>
+        <td><button><%= link_to t('.delete'), fixture, method: :delete, data: { confirm: t('.sure') } %></button></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Fixture', new_fixture_path %>

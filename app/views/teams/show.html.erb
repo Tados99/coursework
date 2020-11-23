@@ -1,10 +1,12 @@
-<p id="notice"><%= notice %></p>
-
 <div class="information">
-  
-<p><button><%= link_to t('.edit'), edit_team_path(@team) %></button> |
-<button><%= link_to t('.back'), teams_path %></button> | <button><%=link_to t('.add'), new_player_path(team_id: @team)%></button>
-</p>
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <button><%= link_to t('.edit'), edit_team_path(@team) %></button> |
+    <button><%= link_to t('.back'), teams_path %></button> | <button><%=link_to t('.add'), new_player_path(team_id: @team)%></button>
+  </p>
+
   <p>
     <strong><%=t('.name')%></strong>
     <%= @team.name %>

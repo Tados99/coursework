@@ -1,12 +1,13 @@
-<p><%= "Dear Hungarian League I team," %></p>
+<!-- This is the template for the contact e-mail that is getting sent when the contact form is being submitted -->
+<p><%= t('.dear') %></p>
 
-<p><%= "You have a message from the League website:" %></p>
+<p><%= t('.email') %></p>
 
 <dd>Name: <%= @name %></dd>
 <dd>E-mail: <%= @email %></dd>
 
 <p><%= @message %></p>
 
-<p>Thanks,</p>
+<p><%= t('.thanks') %></p>
 
 <p><%= @name %></p>

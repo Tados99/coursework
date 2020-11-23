@@ -1,6 +1,6 @@
-<h1>Editing Team</h1>
+<h1><%= t('.editing') %></h1>
 
 <%= render 'form', team: @team %>
 
-<%= link_to 'Show', @team %> |
-<%= link_to 'Back', teams_path %>
+<button><%= link_to t('.show'), @team %></button> |
+<button><%= link_to t('.back'), teams_path %></button>

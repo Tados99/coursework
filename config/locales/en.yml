@@ -33,10 +33,39 @@ en:
   players:
     show:
       players: Players
+      team: Team
+      surname: Surname
+      forename: Forename
+      dob: Date of Birth
+      played: Games played
+      scores: Scores
+      assists: Assists
       edit: Edit
+      back: Back
+    edit:
+      editing: Editing Player
+      show: Show
+      back: Back
+    index:
+      newPlayer: Add a new Player
+      playerList: Players
+      team: Team
+      surname: Surname
+      forename: Forename
+      dob: Date of Birth
+      played: Games played
+      scores: Scores
+      assists: Assists
+      show: More information
+      edit: Edit Player
+      delete: Delete
+      sure: Are you sure?
+    new:
+      newPlayer: New Player
       back: Back
   teams:
     index:
+      teamList: Teams
       newTeam: Add a new team
       clickOn: Click on any of the teams for further options and information about them.
       name: Name
@@ -44,9 +73,50 @@ en:
       estYear: Establishment Year
       champships: Championships Won
       delete: Delete
+      sure: Are you sure?
     show:
       add: Add Player
       name: "Name:"
       city: "City:"
       estYear: "Establishment Year:"
       champships: "Championships Won:"
+    edit:
+      editing: Editing team
+      back: Back
+      show: Show
+    new:
+      newT: Editing team
+      backT: Back
+  contact_mailer:
+    contact_email:
+      dear: "Dear Hungarian League I team,"
+      email: "You have a message from the League website:"
+      thanks: Thanks,
+  fixtures:
+    _form:
+      error: "prohibited this fixture from being saved:"
+    edit:
+      show: Show
+      back: Back
+      editing: Editing Fixture
+    index:
+      fixtures: Fixtures
+      new: New Fixture
+      home: Home Team
+      away: Away Team
+      hscore: Home score
+      ascore: Away score
+      sure: Are you sure?
+      info: More information
+      edit: Edit fixture
+      delete: Delete
+    new:
+      newFixture: New Fixture
+      back: Back
+    show:
+      home: Home Team
+      away: Away Team
+      hscore: Home score
+      ascore: Away score
+      edit: Edit
+      back: Back

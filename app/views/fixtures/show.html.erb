@@ -1,24 +1,43 @@
-<p id="notice"><%= notice %></p>
+<div class="information">
 
-<p>
-  <strong>Home team:</strong>
-  <%= @fixture.home_team_id %>
-</p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Away team:</strong>
-  <%= @fixture.away_team_id %>
-</p>
+  <p>
+    <button><%= link_to t('.edit'), edit_fixture_path(@fixture) %></button> |
+    <button><%= link_to t('.back'), fixtures_path %></button>
+  </p>
 
-<p>
-  <strong>Home score:</strong>
-  <%= @fixture.home_score %>
-</p>
+<!-- This code bit is responsible for finding the appropriate team for the ids -->
 
-<p>
-  <strong>Away score:</strong>
-  <%= @fixture.away_score %>
-</p>
+  <p><strong><%= t('.home')%></strong></p>
+        <% @teams = Team.all %>
+        <% @teams.each do |team| %>
+          <% if @fixture.home_team_id == team.id %>
+            <p><%= team.name %></p>
+          <% end %>
+        <% end %>
+        <p><strong><%= t('.away')%></strong></p>
+        <% @teams.each do |team| %>
+          <% if @fixture.away_team_id == team.id %>
+            <p><%= team.name %></p>
+          <% end %>
+        <% end %>
+        
+<!-- The above code bit is responsible for finding the appropriate team for the ids -->
 
-<%= link_to 'Edit', edit_fixture_path(@fixture) %> |
-<%= link_to 'Back', fixtures_path %>
+  <p>
+    <strong><%= t('.away')%></strong>
+    <%= @fixture.away_team_id %>
+  </p>
+
+  <p>
+    <strong><%= t('.hscore')%></strong>
+    <%= @fixture.home_score %>
+  </p>
+
+  <p>
+    <strong><%= t('.ascore')%></strong>
+    <%= @fixture.away_score %>
+  </p>
+
+</div>
