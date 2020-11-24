@@ -29,9 +29,9 @@
         <td><%= player.games_played %></td>
         <td><%= player.scores %></td>
         <td><%= player.assists %></td>
-        <td><%= link_to t('.show'), player %></td>
-        <td><%= link_to t('.edit'), edit_player_path(player) %></td>
-        <td><%= link_to t('.delete'), player, method: :delete, data: { confirm: t('.sure') } %></td>
+        <td><button><%= link_to t('.show'), player %></button></td>
+        <td><button><%= link_to t('.edit'), edit_player_path(player) %></button></td>
+        <td><button><%= link_to t('.delete'), player, method: :delete, data: { confirm: t('.sure') } %></button></td>
       </tr>
     <% end %>
   </tbody>

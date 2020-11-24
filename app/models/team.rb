@@ -7,6 +7,7 @@ class Team < ApplicationRecord
 
   validates :est_year, presence: true
 
-  has_many :players, dependent: :nullify;
-  has_many :fixtures
+  has_many :players, dependent: :destroy;
+  has_many :fixtures, :foreign_key => :home_team_id, dependent: :destroy
+  has_many :fixtures, :foreign_key => :away_team_id, dependent: :destroy
 end
