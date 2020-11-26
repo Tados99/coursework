@@ -20,9 +20,14 @@
 $(document).ready(function(){
 
   $("#resourcesText").hide();
+  $("#programmerText").hide();
 
   $("#resources").click(function(){
     $("#resourcesText").slideToggle();
+  });
+
+  $("#programmer").click(function(){
+    $("#programmerText").slideToggle();
   });
 
 });

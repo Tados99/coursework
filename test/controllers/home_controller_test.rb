@@ -12,7 +12,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get home_contact_url
     assert_response :success
     assert_select 'title', 'Hungarian Ultimate League I'
-    assert_select 'h1', 'Contact us!'
+    assert_select 'h1', 'Contact Us'
     assert_select 'p', 'You can contact the owners of this webpage through the form below.'
   end
 

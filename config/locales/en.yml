@@ -12,9 +12,10 @@ en:
       mrksz: Hungarian Ultimate Federation
       credit: "Since the Hungarian Ultimate Federation is an existing and legitimate entity, I included their actual website through the following link:   "
       me: For Coursework details click here
-      programmer: This website was created by Abel Csanaki (ac01519) at the University of Surrey. The inspiration for this website came from an existing sports league of which I am a proud player. The sole purpose of this website however is to complete the coursework for the University of Surrey's COM2025 - Web Applications and Development module. I have been logging my work on Github. I have checked and this coursework was running in the lab environment.
-      contact_us: Contact us!
-      contact: You can contact the owners of this webpage through the form below.
+      programmer: "This website was created by Abel Csanaki (ac01519) at the University of Surrey. The inspiration for this website came from an existing sports league of which I am a proud player. The sole purpose of this website however is to complete the coursework for the University of Surrey's COM2025 - Web Applications and Development module. I have been logging my work on Github. I decided to use erb instead of haml because I found erb to be more straightforward for me and I could implement any previous knowledge I had in web development easier this way. I have checked and this coursework was running in the lab environment. All the tests were running when I finished my coding."
+    contact:
+      contact_us: 'Contact Us'
+      contact: 'You can contact the owners of this webpage through the form below.'
       name: "Name:"
       enter_name: Please enter your name here!
       email: "E-mail:"

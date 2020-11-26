@@ -13,6 +13,7 @@ form label, form input {
   display: block;
   margin: 10px;
 }
+
 #jQueryNav {
   padding: 0px;
   background-color: $main_red;
@@ -21,10 +22,10 @@ form label, form input {
   text-align: center;
 }
 
-#resources:hover {
+#resources:hover,#programmer:hover {
   background-color: $grey;
 }
 
-#resources {
+#resources,#programmer {
   color: white;
 }
