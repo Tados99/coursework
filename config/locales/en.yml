@@ -7,8 +7,12 @@ en:
       email_sent: Thank you for messaging us.
     home:
       welcome: Hungarian Ultimate League I
-      information: The Hungarian Ultimate League I is the professional adult Ultimate Frisbee League in Hungary. The League was established in 2017. It is currently sponsored by the 'Well Travel Agency' hence it is also known as Well Travel League. It is set to begin its 4th season in 2021 with more teams than ever before. This website is created to showcase a possible fixture and standings scenario for the League, but it can be used to track and organize data for any similar league. As a player of the aforementioned League I decided it is a good base idea to build my coursework on. There is no authetication or admin tracking process, so in its current state anyone can add new fixtures and modify the data. I figured this is not a problem for the coursework, but if I were to develop this site for actual users I would pay closer attention to who can change things.
-    contact:
+      information: "The Hungarian Ultimate League I is the professional adult Ultimate Frisbee League in Hungary. The League was established in 2017. It is currently sponsored by the 'Well Travel Agency' hence it is also known as Well Travel League. It is set to begin its 4th season in 2021 with more teams than ever before. This website is created to showcase a possible fixture and standings scenario for the League, but it can be used to track and organize data for any similar league. As a player of the aforementioned League I decided it is a good base idea to build my coursework on. There is no authetication or admin tracking process, so in its current state anyone can add new fixtures and modify the data. I figured this is not a problem for the coursework, but if I were to develop this site for actual users I would pay closer attention to who can change things."
+      real: Click here for further information
+      mrksz: Hungarian Ultimate Federation
+      credit: "Since the Hungarian Ultimate Federation is an existing and legitimate entity, I included their actual website through the following link:   "
+      me: For Coursework details click here
+      programmer: This website was created by Abel Csanaki (ac01519) at the University of Surrey. The inspiration for this website came from an existing sports league of which I am a proud player. The sole purpose of this website however is to complete the coursework for the University of Surrey's COM2025 - Web Applications and Development module. I have been logging my work on Github. I have checked and this coursework was running in the lab environment.
       contact_us: Contact us!
       contact: You can contact the owners of this webpage through the form below.
       name: "Name:"
