@@ -21,6 +21,8 @@ $(document).ready(function(){
 
   $("#resourcesText").hide();
   $("#programmerText").hide();
+  $("#GitHubText").hide();
+  $("#linktocenter").hide();
 
   $("#resources").click(function(){
     $("#resourcesText").slideToggle();
@@ -28,6 +30,11 @@ $(document).ready(function(){
 
   $("#programmer").click(function(){
     $("#programmerText").slideToggle();
+  });
+
+  $("#GitHub").click(function(){
+    $("#GitHubText").slideToggle();
+    $("#linktocenter").slideToggle();
   });
 
 });

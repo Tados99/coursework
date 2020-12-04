@@ -22,10 +22,16 @@ form label, form input {
   text-align: center;
 }
 
-#resources:hover,#programmer:hover {
+#resources:hover,#programmer:hover, #GitHub:hover {
   background-color: $grey;
 }
 
-#resources,#programmer {
+#resources,#programmer,#GitHub{
   color: white;
+}
+
+#linktocenter {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
 }
